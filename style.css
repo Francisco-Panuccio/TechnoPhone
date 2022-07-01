@@ -180,12 +180,12 @@ header nav ul li a span {
     padding: 4.38rem;
 }
 
-.presentacion .presentacion__celular {
+.presentacion__celular {
     display: flex;
     flex-wrap: wrap;
 }
 
-.presentacion .presentacion__celular img {
+.presentacion__celular img {
     margin: 3rem;
 }
 
@@ -206,7 +206,7 @@ header nav ul li a span {
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(196, 196, 196));
 }
 
-.presentacion .presentacion__texto p {
+.presentacion__texto p {
     font-family: 'Lintel', sans-serif;
     font-size: 2.5rem;
     color: #FFFFFF;
@@ -751,9 +751,163 @@ footer p {
 
 /* Media Queries Index */
 
+@media screen and (max-width: 768px){
+    header {
+        justify-content: center;
+        column-gap: 2rem;
+    }
 
+    .header__logo {
+        width: 16rem;
+        height: 16rem;
+    }
 
+    .header__titulo {
+        font-size: 2.8rem;
+        margin-right: 1.5rem;
+    }
 
+    header nav ul {
+        justify-content: center;
+        margin: 4rem 0 0 0;
+        
+    }
+
+    header nav ul li a img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    header nav ul li a span {
+        font-size: 1.8rem;
+    }
+
+    .busqueda {
+        margin: 0 0 4rem 0;
+    }
+
+    .marcas ul {
+        flex-flow: column wrap;
+    }
+
+    .marcas ul li a, .marcas h2 {
+        font-size: 3.2rem;
+    }
+
+    .titulo__especial {
+        font-size: 2.5rem;
+    }
+
+    .celulares {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .celular-modelo {
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    .presentacion {
+        padding: 0;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacion__celular .s-22 {
+        margin: 0.5rem 0 0 7rem;
+    }
+
+    .presentacion__celular .iphone-12 {
+        margin: 0.5rem 0 0 0;
+    }
+
+    .presentacion__celular .note-8 {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .presentacion__celular .moto-g200 {
+        margin: 0.2rem 0 0rem 0;
+    }
+
+    .presentacion__texto {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .primer_texto {
+        width: 80%;
+        margin: 0.5rem 0 1rem 0;
+        padding: 1rem;
+    }
+
+    .segundo_texto {
+        width: 80%;
+        margin: 2rem 0 3rem 0;
+        padding: 1rem;
+    }
+
+    .nosotros__section {
+        width: 90%;
+    }
+
+    .texto {
+        margin: 3rem;
+        font-size: 2.5rem;
+    }
+
+    /* ACA VA CONTACTANOS */
+
+    .main__section {
+        width: 80%;
+        height: 45rem;
+    }
+
+    .olvidaste-contraseña {
+        padding: 0 0 1rem 0;
+    }
+
+    .main__form {
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    .main__registro {
+        padding: 10rem;
+    }
+
+    .main__olvidaste {
+        padding: 16rem;
+    }
+
+    footer {
+        flex-flow: column wrap;
+    }
+
+    footer p {
+        margin: 2rem 2.5rem 2rem 0;
+    }
+
+    .separador {
+        display: none;
+        font-size: 1.5rem;
+    }
+
+    .footer__iconos li a span {
+        font-size: 1rem;
+    }
+
+    .footer__iconos {
+        justify-content: center;
+        margin: 0 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+}
 
 /* Tic Tac Toe */
 
