@@ -89,7 +89,7 @@ header nav ul li a span {
     font-size: 1.2rem;
     border: #000000;
     border-radius: 10px;
-    width: 70.3rem;
+    width: 100%;
     margin: 0 0 4rem 2.8rem;
 }
 
@@ -910,6 +910,20 @@ footer p {
         justify-content: center;
         margin: 0 0 2rem 0;
     }
+
+    .titulo__tictactoe {
+        margin-right: 2rem;
+    }
+
+    .grilla {
+    grid-template-columns: repeat(3,17rem);
+    grid-template-rows: repeat(3,17rem);
+    margin-bottom: 7rem;
+    }
+
+    .main__tictactoe {
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -1020,6 +1034,30 @@ footer p {
     .footer__iconos li a img {
         margin: 0 0 0 1.5rem;
     }
+
+    .header__tictactoe {
+        padding-top: 7rem;
+    }
+
+    .titulo__tictactoe {
+        margin: 0;
+    }
+
+    .grilla {
+        grid-template-columns: repeat(3,10rem);
+        grid-template-rows: repeat(3,10rem);
+    }
+
+    .div__tictactoe {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .div__tictactoe a {
+        margin: 0;
+    }
 }
 
 /* Tic Tac Toe */
@@ -1099,46 +1137,4 @@ footer p {
     background-image: url(./imagenes/equis.png);
     background-position: center;
     background-size: 100%;
-}
-
-@media screen and (max-width: 768px){
-    .titulo__tictactoe {
-        margin-right: 2rem;
-    }
-
-    .grilla {
-    grid-template-columns: repeat(3,17rem);
-    grid-template-rows: repeat(3,17rem);
-    margin-bottom: 7rem;
-    }
-
-    .main__tictactoe {
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .header__tictactoe {
-        padding-top: 7rem;
-    }
-
-    .titulo__tictactoe {
-        margin: 0;
-    }
-
-    .grilla {
-        grid-template-columns: repeat(3,10rem);
-        grid-template-rows: repeat(3,10rem);
-    }
-
-    .div__tictactoe {
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        margin-top: 4rem;
-    }
-
-    .div__tictactoe a {
-        margin: 0;
-    }
 }
