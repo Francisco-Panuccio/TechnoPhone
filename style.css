@@ -38,6 +38,7 @@ a {
     color: #FFFFFF;
     font-family: 'Architext', sans-serif;
     font-size: 3rem;
+    text-shadow: 4px 4px 4px #FFFFFF;
 }
 
 header nav {
@@ -64,6 +65,11 @@ header nav ul li a img {
     margin: 0 2rem 0 2rem;
     width: 4rem;
     height: 4rem;
+}
+
+header nav ul li a img:hover {
+    transition: all 1s;
+    transform: rotate(360deg);
 }
 
 header nav ul li a span {
@@ -120,6 +126,7 @@ header nav ul li a span {
     color: #000000;
     list-style: none;
     flex-grow: 1;
+    text-shadow: 1px 1px 1px #FFFFFF;
 }
 
 .marcas h2 {
@@ -131,6 +138,7 @@ header nav ul li a span {
     list-style: none;
     border: 0.1rem solid black;
     font-weight: 400;
+    text-shadow: 1px 1px 1px #FFFFFF;
 }
 
 /* Header de Inicio de Sesion/Registro/Olvidaste Contraseña */
@@ -142,6 +150,10 @@ header nav ul li a span {
     align-items: center;
 }
 
+.header__especial h1 {
+    margin-right: 2rem;
+}
+
 .header__especial h2 {
     font-size: 2em;
     font-weight: bold;
@@ -151,6 +163,7 @@ header nav ul li a span {
     color: #FFFFFF;
     font-family: 'Architext', sans-serif;
     font-size: 3rem;
+    text-shadow: 4px 4px 4px #FFFFFF;
 }
 
 /* Main Index */
@@ -168,6 +181,11 @@ header nav ul li a span {
 .celular-modelo {
     padding: 4rem;
     margin: 4rem;
+}
+
+.celular-modelo img:hover {
+
+    transform: scale(1.2);
 }
 
 /* Main Samsung/Apple/Xiaomi/Motorola */
@@ -678,6 +696,7 @@ header nav ul li a span {
     font-size: 5rem;
     font-weight: 500;
     padding-left: 0.3rem;
+    text-shadow: 1px 1px 7px #FFFFFF;
 }
 
 .play_tictactoe {
@@ -689,6 +708,18 @@ header nav ul li a span {
     text-align: center;
     border-radius: 10px;
     border: dotted greenyellow 1rem;
+    text-shadow: 1px 1px 7px #FFFFFF;
+    animation: bordeado 0.5s infinite;
+}
+
+@keyframes bordeado {
+    0%{
+        border: dotted greenyellow 1rem;
+        transform: translateX(1px);
+    }
+    100%{
+        border: dotted green 1rem; 
+    }
 }
 
 /* Footer General */
@@ -747,7 +778,12 @@ footer p {
     height: 2rem;
     padding: 1rem;
     margin: 0 2rem;
-} 
+}
+
+.footer__iconos li a img:hover {
+    transition: all 1s;
+    transform: rotate(360deg);
+}
 
 /* Media Queries Index */
 
@@ -960,6 +996,10 @@ footer p {
 
     .header__barra {
         width: 62%;
+    }
+
+    .header__especial h1 {
+        margin-right: 0;
     }
 
     .marcas ul li a {
