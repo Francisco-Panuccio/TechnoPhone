@@ -103,14 +103,32 @@ header nav ul li a span {
 
 .marcas {
     width: 100%;   
-}
-
-.marcas ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+.dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+.dropdown button {
+    background-color: #999999;
+    border: 0.1rem solid black;
+    text-align: center;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    text-shadow: 2px 0px 1px #FFFFFF;
+    flex-grow: 1;
+}
+
+
+
+/*
 .marcas ul li  {
     display: flex;
     flex-grow: 1;
@@ -129,6 +147,10 @@ header nav ul li a span {
     text-shadow: 2px 0px 1px #FFFFFF;
 }
 
+
+
+
+
 .marcas h2 {
     background-color: #999999;
     text-align: center;
@@ -139,7 +161,7 @@ header nav ul li a span {
     border: 0.1rem solid black;
     font-weight: 400;
     text-shadow: 1px 1px 1px #FFFFFF;
-}
+} */
 
 /* Header de Inicio de Sesion/Registro/Olvidaste Contraseña */
 
