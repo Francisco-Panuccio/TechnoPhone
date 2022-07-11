@@ -22,10 +22,6 @@ header {
     justify-content: space-evenly;
 }
 
-a {
-    text-decoration: none;
-}
-
 .header__logo {
     width: 19rem;
     height: 19rem;
@@ -35,10 +31,14 @@ a {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    color: #FFFFFF;
     font-family: 'Architext', sans-serif;
-    font-size: 3rem;
     text-shadow: 4px 4px 4px #FFFFFF;
+    text-decoration: none;
+}
+
+.header__titulo h1 {
+    color: #FFFFFF;
+    font-size: 6rem;
 }
 
 header nav {
@@ -59,6 +59,7 @@ header nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     margin: 0 2rem 0 2rem;
+    text-decoration: none;
 }
 
 header nav ul li a img {
@@ -129,7 +130,7 @@ header nav ul li a span {
 .dropdown ul,.dropdown2 ul {
     width: 100%;
     border-radius: 10px;
-    background-color: #999999;
+    background-color: #000000;
 }
 
 .dropdown ul li,.dropdown2 ul li {
@@ -137,11 +138,25 @@ header nav ul li a span {
     font-size: 2rem;
 }
 
+.dropdown ul li a, .dropdown2 ul li a {
+    color: #FFFFFF;
+}
+
 .dropdown2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+}
+
+.dropdown button:focus {
+    color: #000000;
+    background-color: #999999;
+}
+
+.dropdown2 button:focus {
+    color: #000000;
+    background-color: #999999;
 }
 
 /* Header de Inicio de Sesion/Registro/Olvidaste Contraseña */
@@ -763,6 +778,7 @@ footer p {
     justify-content: space-evenly;
     align-items: center;
     margin: 0 2rem;
+    text-decoration: none;
 }
 
 .footer__iconos li a span {
@@ -780,6 +796,7 @@ footer p {
     height: 2rem;
     padding: 1rem;
     margin: 0 2rem;
+    box-sizing: content-box;
 }
 
 .footer__iconos li a img:hover {
@@ -880,14 +897,16 @@ footer p {
     }
 
     .header__titulo {
-        font-size: 2.8rem;
         margin-right: 1.5rem;
+    }
+
+    .header__titulo h1 {
+        font-size: 5.8rem;
     }
 
     header nav ul {
         justify-content: center;
         margin: 4rem 0 0 0;
-        
     }
 
     header nav ul li a img {
@@ -903,12 +922,16 @@ footer p {
         margin: 0 0 4rem 0;
     }
 
-    .marcas ul {
-        flex-flow: column wrap;
+    .dropdown ul li,.dropdown2 ul li {
+        font-size: 1.5rem;
     }
 
-    .marcas ul li a, .marcas h2 {
-        font-size: 3.2rem;
+    .dropdown ul, .dropdown2 ul {
+        background-color: #999999;
+    }
+
+    .dropdown ul li a, .dropdown2 ul li a {
+        color: #000000;
     }
 
     .titulo__especial {
@@ -990,6 +1013,10 @@ footer p {
         height: 45rem;
     }
 
+    .celular-modelo img:hover {
+        transform: scale(1.1);
+    }
+
     .olvidaste-contraseña {
         padding: 0 0 1rem 0;
     }
@@ -1045,8 +1072,11 @@ footer p {
 
 @media screen and (max-width: 480px){
     .header__titulo {
-        font-size: 2rem;
         margin-right: 0.2rem;
+    }
+
+    .header__titulo h1 {
+        font-size: 4.2rem;
     }
 
     header nav {
@@ -1083,8 +1113,21 @@ footer p {
         margin-right: 0;
     }
 
-    .marcas ul li a {
-        font-size: 2.7rem;
+    .marcas {
+        flex-flow: column wrap;
+    }
+
+    .dropdown {
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+    .dropdown ul, .dropdown2 ul {
+        background-color: #000000;
+    }
+
+    .dropdown ul li a, .dropdown2 ul li a {
+        color: #FFFFFF;
     }
 
     .celular-modelo img {
@@ -1114,9 +1157,34 @@ footer p {
     .main__div {
         width: 100%;
     }
+    
+    .s-22, .iphone-se {
+        width: 25rem;
+        height: 40rem;
+    }
 
-    .celular-modelo img:hover {
-        transform: scale(1.1);
+    .iphone-13, .iphone-12, .note-8, .moto-g200, .moto-g60s {
+        width: 30rem;
+        height: 40rem;
+    }
+
+    .a-21s, .note-11, .note-9 {
+        width: 35rem;
+        height: 40rem;
+    }
+
+    .moto-e40 {
+        width: 33rem;
+        height: 40rem;
+    }
+
+    .a-51 {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .presentacion__celular .s-22 {
+        margin-right: 2rem;
     }
 
     .olvidaste-contraseña {
