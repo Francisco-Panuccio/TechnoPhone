@@ -80,16 +80,31 @@
         </section>
     </header>
 
-    <main class="celulares">
-        <div class="celular-modelo">
-            <a href="./paginas/apple-iphone12.html"><img src="./imagenes/modelo-1-iphone-12.png" alt="Celular Modelo 1"></a>
+    <main id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./paginas/apple-iphone12.html"><img src="./imagenes/modelo-1-iphone-12.png" class="d-block w-40" alt="Celular Modelo 1"></a>
         </div>
-        <div class="celular-modelo">
-            <a href="./paginas/samsung-s22.html"><img src="./imagenes/modelo-2-galaxy-s22.png" alt="Celular Modelo 2"></a>
+        <div class="carousel-item">
+          <a href="./paginas/samsung-s22.html"><img src="./imagenes/modelo-2-galaxy-s22.png" class="d-block w-40" alt="Celular Modelo 2"></a>
         </div>
-        <div class="celular-modelo">
-            <a href="./paginas/xiaomi-redmi-8.html"><img src="./imagenes/modelo-3-redmi-note-8.png" alt="Celular Modelo 3"></a>
+        <div class="carousel-item">
+          <a href="./paginas/xiaomi-redmi-8.html"><img src="./imagenes/modelo-3-redmi-note-8.png" class="d-block w-40" alt="Celular Modelo 3"></a>
         </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </main>
 
     <footer>
