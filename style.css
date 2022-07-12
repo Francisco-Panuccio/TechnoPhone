@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 /* Header General */
@@ -197,6 +197,11 @@ header nav ul li a span {
 .carousel img {
     margin: 2rem auto 3rem auto;
     height: 60rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 10rem;
+    height: 20rem;
 }
 
 /* Main Samsung/Apple/Xiaomi/Motorola */
