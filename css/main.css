@@ -141,7 +141,7 @@ header {
 
 /* Main Index */
 .carousel {
-  background-image: url(/imagenes/fondo.png);
+  background-image: url(../imagenes/fondo.png);
   background-repeat: no-repeat;
   background-size: cover; }
   .carousel img {
