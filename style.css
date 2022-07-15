@@ -945,11 +945,6 @@ footer p {
         align-items: center;
     }
 
-    .celular-modelo {
-        margin: 1rem 0;
-        padding: 0;
-    }
-
     .presentacion {
         padding: 0;
         flex-flow: column wrap;
@@ -1046,10 +1041,6 @@ footer p {
     .main__section {
         width: 80%;
         height: 45rem;
-    }
-
-    .celular-modelo img:hover {
-        transform: scale(1.1);
     }
 
     .olvidaste-contraseña {
@@ -1163,11 +1154,6 @@ footer p {
 
     .dropdown ul li a, .dropdown2 ul li a {
         color: #FFFFFF;
-    }
-
-    .celular-modelo img {
-        width: 20rem;
-        height: 40rem;
     }
 
     .header__especial {
