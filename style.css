@@ -1296,6 +1296,10 @@ footer p {
         padding-left: .5rem;
     }
 
+    .footer__iconos li:nth-child(4) {
+        margin: 1rem 0 0 1rem;
+    }
+
     .footer__iconos li a img {
         margin: 0 0 0 1.5rem;
     }
@@ -1338,5 +1342,65 @@ footer p {
     .div__olvidaste input, .buscar  input {
         width: 12rem;
         margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .header__titulo h1 {
+        font-size: 3.5rem;
+    }
+
+    header nav ul li a span {
+        font-size: 1.3rem;
+    }
+
+    .primer_texto, .segundo_texto {
+        height: 50rem;
+    }
+
+    .a-51 {
+        width: 32rem;
+        height: 32rem;
+    }
+
+    .a-21s, .note-8 {
+        width: 27rem;
+        height: 32rem;
+    }
+
+    .presentacion__celular .moto-g200, .presentacion__celular .moto-e40 {
+        margin: 3rem 0;
+    }
+
+    .s-22, .moto-g200, .moto-g60s {
+        height: 38rem;
+    }
+
+    .presentacion__celular .note-11, .presentacion__celular .note-9 {
+        margin: 3rem 0;
+        width: 30rem;
+        height: 35rem;
+    }
+
+    .remarque {
+        font-size: 1.6rem;
+    }
+
+    .ubicacion {
+        width: 80%;
+    }
+
+    .div__olvidaste {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .footer__iconos li a img {
+        margin: 0;
+    }
+
+    .grilla {
+        grid-template-columns: repeat(3, 8rem);
+        grid-template-rows: repeat(3, 8rem);
     }
 }
