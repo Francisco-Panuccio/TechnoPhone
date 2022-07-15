@@ -1218,9 +1218,16 @@ footer p {
         height: 40rem;
     }
 
-    .primer_texto, .segundo_texto {
+    .primer_texto {
         overflow-y: auto;
-        height: 58rem;
+        height: 60rem;
+    }
+
+    .segundo_texto {
+        overflow-y: auto;
+        height: 60rem;
+        padding: 0;
+        justify-content: unset;
     }
 
     .olvidaste-contraseña {
