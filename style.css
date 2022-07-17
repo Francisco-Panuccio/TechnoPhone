@@ -28,7 +28,7 @@ header {
 
 .header__logo {
     width: 19rem;
-    height: 19rem;
+    height: 18rem;
 }
 
 .header__titulo {
@@ -941,11 +941,11 @@ footer p {
     border-radius: 10px;
 }
 
-input {
+.grilla-1 input {
     display: none;
 }
 
-input:checked + label {
+.grilla-1 input:checked + label {
     width: 0.01rem;
     height: 0.01rem;
 }
