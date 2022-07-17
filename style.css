@@ -1321,6 +1321,10 @@ footer p {
         margin: 0 auto;
     }
 
+    .presentacion__celular .a-51 {
+        margin: 3rem 0;
+    }
+
     .section__olvidaste h3 {
         font-size: 2.5rem;
     }
