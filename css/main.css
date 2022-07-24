@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -139,6 +140,24 @@ header {
       .dropdown2 ul li a {
         color: #FFFFFF; }
 
+/* Header de Inicio de Sesion/Registro/Olvidaste Contraseña */
+.header__especial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem dotted #FFFFFF; }
+  .header__especial h1 {
+    margin-right: 2rem; }
+  .header__especial h2 {
+    font-size: 2em;
+    font-weight: bold; }
+
+.titulo__especial {
+  color: #FFFFFF;
+  font-family: 'Architext', sans-serif;
+  font-size: 3rem; }
+
 /* Main Index */
 .carousel {
   background-image: url(../imagenes/fondo.png);
@@ -202,7 +221,582 @@ footer {
         transition: all 1s;
         transform: rotate(360deg); }
 
-/* Media Queries Index */
+/* Main Nosotros */
+.nosotros {
+  background-image: url(../imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4.38rem;
+  color: #FFFFFF; }
+
+.nosotros__section {
+  border: 0.5rem solid #FFFFFF;
+  background-color: #000000;
+  border-radius: 20px;
+  width: 50%; }
+  .nosotros__section h2 {
+    text-align: center;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    border-bottom: 0.5rem solid #FFFFFF; }
+
+.nosotros__texto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.texto {
+  margin: 10rem;
+  text-align: center;
+  font-family: 'Oxanium', sans-serif;
+  font-size: 3rem;
+  font-weight: 500; }
+
+/* Main Contactanos */
+.contactanos {
+  background-image: url(../imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 11rem;
+  color: #FFFFFF; }
+
+.contactanos__section {
+  display: flex;
+  flex-flow: column wrap;
+  border: 0.5rem solid #FFFFFF;
+  background-color: #000000;
+  border-radius: 50px; }
+  .contactanos__section h2 {
+    text-align: center;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    border-bottom: 0.5rem solid #FFFFFF;
+    padding: 1rem; }
+  .contactanos__section input {
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px; }
+  .contactanos__section textarea {
+    margin: 1rem;
+    padding: 1rem;
+    height: 10rem;
+    resize: none;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px; }
+
+.contactanos__form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 1rem; }
+
+.enviar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .enviar input {
+    width: 40%;
+    background-color: green;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 10px; }
+    .enviar input:hover {
+      border: 0.2rem solid #FFFFFF;
+      box-shadow: 2px 2px 9px #FFFFFF; }
+
+.ubicacion {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 20px;
+  border: 0.5rem solid #FFFFFF; }
+  .ubicacion iframe {
+    width: 40rem;
+    height: 40rem;
+    padding: 1rem; }
+
+.encuentro {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 1rem; }
+
+/* Main Inicio de Sesion */
+.main__especial {
+  background-image: url(../imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6.4rem;
+  color: #FFFFFF; }
+
+.main__section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  border: 0.5rem solid #FFFFFF;
+  background-color: #000000;
+  border-radius: 20px;
+  width: 55rem;
+  height: 55rem; }
+  .main__section h3 {
+    text-align: center;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    border: 0.2rem solid #FFFFFF;
+    border-radius: 10px;
+    padding: 0.5rem; }
+
+.main__div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.main__form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 1rem; }
+  .main__form input {
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Oxanium', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: bold; }
+    .main__form input:hover {
+      border: 0.2rem solid #FFFFFF;
+      box-shadow: 2px 2px 9px #FFFFFF; }
+
+.enviar__especial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .enviar__especial input {
+    background-color: green;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 100%; }
+    .enviar__especial input:hover {
+      border: 0.2rem solid #FFFFFF;
+      box-shadow: 2px 2px 9px #FFFFFF; }
+
+.olvidaste-contraseña {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem; }
+  .olvidaste-contraseña p {
+    color: green;
+    font-size: 1.2rem;
+    font-family: 'Oxanium', sans-serif; }
+
+/* Main Samsung/Apple/Xiaomi/Motorola */
+.presentacion {
+  background-image: url(../imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 4.38rem; }
+
+.presentacion__celular {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .presentacion__celular img {
+    margin: 3rem; }
+
+.presentacion__texto {
+  display: flex; }
+  .presentacion__texto p {
+    font-family: 'Lintel', sans-serif;
+    font-size: 2.5rem;
+    color: #FFFFFF; }
+
+.primer_texto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  margin: 0 3rem 0 2rem;
+  padding: 0 1rem 0 1rem;
+  border-radius: 20px;
+  border: 20px ridge rgba(64, 64, 64, 0.75);
+  background: linear-gradient(to right, black, #c4c4c4); }
+
+.segundo_texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+  margin: 0 2rem 0 3rem;
+  padding: 0 1rem 0 2rem;
+  border-radius: 20px;
+  border: 20px ridge rgba(64, 64, 64, 0.75);
+  background: linear-gradient(to right, black, #c4c4c4); }
+
+.remarque {
+  color: #FFFFFF;
+  font-family: 'Neogrey', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  align-self: center;
+  text-align: center;
+  padding: .4rem; }
+
+/* Main Registro */
+.main__registro {
+  background-image: url(../imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 14.5rem;
+  color: #FFFFFF; }
+
+.registro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .registro input {
+    width: 70%;
+    background-color: green;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 10px; }
+    .registro input:hover {
+      border: 0.2rem solid #FFFFFF;
+      box-shadow: 2px 2px 9px #FFFFFF; }
+
+.registro__section {
+  width: 70rem;
+  display: flex;
+  flex-flow: column wrap;
+  border: 0.5rem solid #FFFFFF;
+  background-color: #000000;
+  border-radius: 20px; }
+  .registro__section h3 {
+    text-align: center;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: 0.5rem solid #FFFFFF;
+    padding: 1rem; }
+  .registro__section input {
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px; }
+
+.registro__form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+  padding: 1rem; }
+  .registro__form input:hover {
+    border: 0.2rem solid #FFFFFF;
+    box-shadow: 2px 2px 9px #FFFFFF; }
+
+.registro__div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .registro__div input {
+    width: 40%; }
+
+/* Main Olvidaste Contraseña */
+.main__olvidaste {
+  background-image: url(../imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 21.5rem;
+  color: #FFFFFF; }
+
+.section__olvidaste {
+  display: flex;
+  flex-flow: column wrap;
+  border: 0.5rem solid #FFFFFF;
+  background-color: #000000;
+  border-radius: 20px;
+  width: 60rem; }
+  .section__olvidaste h3 {
+    text-align: center;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    border-bottom: 0.5rem solid #FFFFFF;
+    padding: 1rem; }
+  .section__olvidaste p {
+    text-align: center;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem; }
+
+.form__olvidaste {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }
+  .form__olvidaste input {
+    margin: 1rem 1rem 2rem 1rem;
+    padding: 1rem;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px; }
+    .form__olvidaste input:hover {
+      border: 0.2rem solid #FFFFFF;
+      box-shadow: 2px 2px 9px #FFFFFF; }
+
+.div__olvidaste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .div__olvidaste input {
+    width: 15rem;
+    margin-bottom: 1rem;
+    background-color: #999999; }
+
+.buscar input {
+  background-color: green;
+  color: #FFFFFF; }
+  .buscar input:hover {
+    border: 0.2rem solid #FFFFFF;
+    box-shadow: 2px 2px 9px #FFFFFF; }
+
+/* Main Añadir al Carrito */
+.main__carrito {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.4rem;
+  color: #FFFFFF; }
+
+.section__carrito {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .section__carrito img {
+    height: 60rem;
+    padding-top: 2rem;
+    position: relative; }
+  .section__carrito p {
+    text-align: center;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 5rem;
+    font-weight: 500;
+    padding-left: 0.3rem;
+    text-shadow: 1px 1px 7px #FFFFFF; }
+
+.div__carrito {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  width: 25.5rem;
+  height: 54rem;
+  border-radius: 20px;
+  background-color: #000000;
+  box-shadow: inset 0px 0px 12px 3px #FFFFFF;
+  margin: 0.2rem 0 0.2rem 0.3rem; }
+
+.play_tictactoe {
+  font-size: 2rem;
+  font-family: 'Retro Land Mayhem', sans-serif;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  border: dotted greenyellow 1rem;
+  text-shadow: 1px 1px 7px #FFFFFF;
+  animation: bordeado 0.5s infinite; }
+
+@keyframes bordeado {
+  0% {
+    border: dotted greenyellow 1rem;
+    transform: translateX(2px);
+    color: #FFFFFF; }
+  100% {
+    border: dotted green 1rem;
+    color: #FFFFFF; } }
+
+/* Tic Tac Toe */
+.body__tictactoe {
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 1)'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='1.5' stroke='hsla(259, 0%, 25%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>"); }
+
+.header__tictactoe {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  padding: 4rem;
+  background: none; }
+
+.titulo__tictactoe {
+  color: #FFFFFF;
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'Retro Land Mayhem', sans-serif; }
+
+.div__tictactoe {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  justify-content: start;
+  width: fit-content;
+  margin-right: 120rem; }
+  .div__tictactoe a {
+    color: #FFFFFF;
+    margin: 4.2rem 6rem;
+    font-size: 2rem;
+    font-family: 'Retro Land Mayhem', sans-serif;
+    border: dotted greenyellow 0.5rem;
+    padding: 1rem; }
+
+.div__tictactoe-2 {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  justify-content: end;
+  width: fit-content;
+  margin-left: 120rem; }
+  .div__tictactoe-2 a {
+    color: #FFFFFF;
+    margin: 4.2rem 6rem;
+    font-size: 2rem;
+    font-family: 'Retro Land Mayhem', sans-serif;
+    border: dotted greenyellow 0.5rem;
+    padding: 1rem; }
+
+.reglas-generales {
+  width: fit-content;
+  align-self: center;
+  margin-top: 3rem; }
+  .reglas-generales p {
+    display: flex;
+    flex-flow: column wrap; }
+
+.reglas-titulo {
+  color: #6e6e6e;
+  font-size: 3rem;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 2px 2px 2px rgba(206, 89, 55, 0); }
+
+.reglas {
+  margin: auto;
+  font-size: 2rem;
+  color: #e0dfdc;
+  letter-spacing: .1em;
+  text-shadow: 0 0 10px #FFFFFF; }
+
+.main__tictactoe {
+  margin: 0 3rem 6rem;
+  display: flex; }
+
+.grilla-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 21.5rem);
+  grid-template-rows: repeat(3, 21.5rem);
+  gap: 2rem;
+  margin: auto;
+  width: fit-content;
+  place-content: center;
+  background-color: black; }
+  .grilla-1 input {
+    display: none; }
+    .grilla-1 input:checked + label {
+      width: 0.01rem;
+      height: 0.01rem; }
+
+.capa-o {
+  background-image: url(../imagenes/circle.png);
+  background-color: #FFFFFF;
+  user-select: none;
+  position: absolute;
+  width: 21.5rem;
+  height: 21.5rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px 5px #D8D8D8;
+  background-position: center;
+  background-size: 100%; }
+
+.capa-x {
+  background-image: url(../imagenes/equis.png);
+  background-color: #FFFFFF;
+  user-select: none;
+  position: absolute;
+  border-radius: 10px;
+  width: 21.5rem;
+  height: 21.5rem;
+  background-position: center;
+  background-size: 100%; }
+
+.capa-cero {
+  background-color: #FFFFFF;
+  user-select: none;
+  position: absolute;
+  width: 21.5rem;
+  height: 21.5rem;
+  border-radius: 10px; }
+
+#tictactoe1 + label,
+#tictactoe2 + label,
+#tictactoe3 + label,
+#tictactoe4 + label,
+#tictactoe5 + label,
+#tictactoe6 + label,
+#tictactoe7 + label,
+#tictactoe8 + label,
+#tictactoe9 + label {
+  pointer-events: none; }
+
+/* Media Queries */
 @media only screen and (max-width: 768px) {
   header {
     justify-content: center;
@@ -230,6 +824,74 @@ footer {
       font-size: 1.5rem; }
       .dropdown ul li a, .dropdown2 ul li a {
         color: #000000; }
+  .celulares {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+  .presentacion {
+    padding: 0;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+  .presentacion__celular .s-22 {
+    margin: 0.5rem 2rem 0 7rem; }
+  .presentacion__celular .iphone-12 {
+    margin: 0.5rem 0 0 0; }
+  .presentacion__celular .note-8 {
+    margin: 3rem 0 2rem 0; }
+  .presentacion__celular .moto-g200 {
+    margin: 0.2rem 0 0rem 0; }
+  .presentacion__texto {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+  .primer_texto {
+    width: 80%;
+    margin: 0.5rem 0 1rem 0;
+    padding: 1rem; }
+  .segundo_texto {
+    width: 80%;
+    margin: 2rem 0 3rem 0;
+    padding: 1rem; }
+  .s-22, .iphone-se {
+    width: 30rem;
+    height: 45rem; }
+  .note-11 {
+    width: 35rem;
+    height: 40rem; }
+  .moto-e40, .a-21s, .note-8 {
+    width: 35rem;
+    height: 42rem; }
+  .iphone-13, .iphone-12 {
+    width: 35rem;
+    height: 45rem; }
+  .note-9 {
+    width: 38rem;
+    height: 42rem; }
+  .a-51 {
+    width: 45rem;
+    height: 45rem; }
+  .nosotros__section {
+    width: 90%; }
+  .texto {
+    margin: 3rem;
+    font-size: 2.5rem; }
+  .contactanos {
+    flex-flow: column wrap;
+    padding: 5rem; }
+  .contactanos__section {
+    margin: 0 0 5rem 0; }
+  .main__section {
+    width: 80%;
+    height: 45rem; }
+  .olvidaste-contraseña {
+    padding: 0 0 1rem 0; }
+  .main__form {
+    padding: 1rem 1rem 0 1rem; }
+  .main__registro {
+    padding: 10rem; }
+  .main__olvidaste {
+    padding: 16rem; }
   footer {
     flex-flow: column wrap; }
     footer p {
@@ -242,6 +904,25 @@ footer {
     margin: 0 0 2rem 0; }
     .footer__iconos li a span {
       font-size: 1rem; } }
+
+.titulo__tictactoe {
+  margin-right: 2rem; }
+
+.div__tictactoe, .div__tictactoe-2 {
+  width: 100%;
+  margin: 0; }
+
+.grilla-1 {
+  grid-template-columns: repeat(3, 17rem);
+  grid-template-rows: repeat(3, 17rem);
+  margin-bottom: 7rem; }
+
+.capa-o, .capa-x, .capa-cero {
+  width: 17rem;
+  height: 17rem; }
+
+.main__tictactoe {
+  margin: auto; }
 
 @media only screen and (max-width: 480px) {
   .header__titulo {
@@ -264,10 +945,9 @@ footer {
           height: 3rem; }
         header nav ul a span {
           font-size: 1.5rem; }
-  .busqueda, .footer__iconos li a {
+  .busqueda, .header__barra, .footer__iconos li a {
     margin: 0; }
   .header__barra {
-    margin: 0;
     width: 62%; }
   .marcas {
     flex-flow: column wrap; }
@@ -282,6 +962,75 @@ footer {
     background-color: #000000; }
     .dropdown2 ul li a {
       color: #FFFFFF; }
+  .header_especial {
+    flex-flow: column wrap; }
+    .header_especial h1 {
+      margin-right: 0; }
+    .header_especial img {
+      width: 10rem;
+      height: 10rem; }
+  .titulo__especial {
+    font-size: 1.8rem;
+    margin: 1rem 0; }
+  .main__section {
+    width: 100%;
+    height: 40rem; }
+  .main__div {
+    width: 100%; }
+  .s-22, .iphone-se {
+    width: 25rem;
+    height: 40rem; }
+  .iphone-13, .iphone-12, .note-8, .moto-g200, .moto-g60s {
+    width: 30rem;
+    height: 40rem; }
+  .a-21s, .note-11, .note-9 {
+    width: 35rem;
+    height: 40rem; }
+  .moto-e40 {
+    width: 33rem;
+    height: 40rem; }
+  .a-51 {
+    width: 40rem;
+    height: 40rem; }
+  .primer_texto {
+    overflow-y: auto;
+    height: 60rem; }
+  .segundo_texto {
+    overflow-y: auto;
+    height: 60rem;
+    padding: 0;
+    justify-content: unset; }
+  .olvidaste-contraseña {
+    padding: 0; }
+  .main__olvidaste {
+    padding: 8rem 0; }
+  .section__olvidaste {
+    width: 70%; }
+  .div__olvidaste input {
+    margin: 1rem 0.5rem; }
+  .main__registro {
+    padding: 5rem; }
+  .registro__div input {
+    width: 90%; }
+  .nosotros__texto {
+    overflow-y: auto;
+    height: 42rem; }
+  .texto {
+    margin: 0 2rem; }
+  .contactanos {
+    padding: 4rem 0; }
+  .contactanos__section {
+    width: 80%;
+    height: 80%; }
+  .media__div input {
+    width: 94%; }
+  .ubicacion {
+    width: 70%;
+    height: 70%; }
+    .ubicacion iframe {
+      width: 90%;
+      height: 30rem;
+      padding-bottom: 2rem; }
   footer p {
     font-size: 1.2rem; }
   .footer__iconos {
@@ -294,10 +1043,86 @@ footer {
     .footer__iconos li:nth-child(4) {
       margin: 1rem 0 0 1rem; } }
 
+.header__tictactoe {
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.titulo__tictactoe {
+  margin: 0; }
+
+.grilla-1 {
+  grid-template-columns: repeat(3, 10rem);
+  grid-template-rows: repeat(3, 10rem); }
+
+.capa-cero, .capa-o, .capa-x {
+  width: 10rem;
+  height: 10rem; }
+
+.div__tictactoe-2 {
+  position: relative;
+  justify-content: end;
+  width: fit-content;
+  height: fit-content;
+  margin: 4rem 0 0 4rem; }
+  .div__tictactoe-2 a {
+    margin: 0; }
+
+.div__tictactoe {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  justify-content: start;
+  margin: 4rem 4rem 0 0; }
+  .div__tictactoe a {
+    margin: 0; }
+
+@media only screen and (max-width: 450px) {
+  .main__div {
+    width: 50%;
+    margin: 0 auto; }
+  .presentacion__celular .a-51 {
+    margin: 3rem 0; }
+  .section__olvidaste h3 {
+    font-size: 2.5rem; }
+  .div__olvidaste input, .buscar input {
+    width: 12rem;
+    margin: 1rem; } }
+
 @media only screen and (max-width: 375px) {
   .header__titulo h1 {
     font-size: 3.5rem; }
   header nav ul li a span {
     font-size: 1.3rem; }
+  .primer_texto, .segundo_texto {
+    height: 50rem; }
+  .a-51 {
+    width: 32rem;
+    height: 32rem; }
+  .a-21s, .note-8 {
+    width: 27rem;
+    height: 32rem; }
+  .presentacion__celular .moto-g200, .presentacion__celular .moto-e40 {
+    margin: 3rem 0; }
+  .presentacion__celular .note-11, .presentacion__celular .note-9 {
+    margin: 3rem 0;
+    width: 30rem;
+    height: 35rem; }
+  .s-22, .moto-g200, .moto-g60s {
+    height: 38rem; }
+  .remarque {
+    font-size: 1.6rem; }
+  .ubicacion {
+    width: 80%; }
+  .div__olvidaste {
+    flex-flow: column wrap;
+    align-items: center; }
   .footer__iconos li a img {
-    margin: 0; } }
+    margin: 0; }
+  .grilla-1 {
+    grid-template-columns: repeat(3, 8rem);
+    grid-template-rows: repeat(3, 8rem); }
+  .capa-cero, .capa-o, .capa-x {
+    width: 8rem;
+    height: 8rem; }
+  .div__tictactoe, .div__tictactoe-2 {
+    margin: 3rem 0 0 0; } }

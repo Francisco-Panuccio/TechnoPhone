@@ -1,0 +1,64 @@
+/* Main Añadir al Carrito */
+
+.main__carrito {
+    @include flex-1;
+    align-items: center;
+    background-image: url(../imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.4rem;
+    color: $color-secundario;
+}
+
+.section__carrito {
+    @include flex-1;
+    align-items: center;
+        img {
+            height: 60rem;
+            padding-top: 2rem;
+            position: relative;
+        }
+        p {
+            text-align: center;
+            font-family: 'Oxanium', sans-serif;
+            font-size: 5rem;
+            font-weight: 500;
+            padding-left: 0.3rem;
+            text-shadow: 1px 1px 7px $color-secundario;
+        }
+}
+
+.div__carrito {
+    @include flex (flex, column wrap, space-evenly);
+    align-items: center;
+    position: absolute;
+    width: 25.5rem;
+    height: 54rem;
+    border-radius: 20px;
+    background-color: $color-principal;
+    box-shadow: inset 0px 0px 12px 3px $color-secundario;
+    margin: 0.2rem 0 0.2rem 0.3rem;
+}
+
+.play_tictactoe {
+    font-size: 2rem;
+    font-family: 'Retro Land Mayhem', sans-serif;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    border: dotted greenyellow 1rem;
+    text-shadow: 1px 1px 7px $color-secundario;
+    animation: bordeado 0.5s infinite;
+}
+
+@keyframes bordeado {
+    0%{
+        border: dotted greenyellow 1rem;
+        transform: translateX(2px);
+        color: $color-secundario;
+    }
+    100%{
+        border: dotted green 1rem; 
+        color: $color-secundario;
+    }
+}

@@ -1,0 +1,587 @@
+/* Media Queries */
+
+@media only screen and (max-width: 768px){
+    header {
+        justify-content: center;
+        column-gap: 2rem;
+            nav {
+                ul {
+                    justify-content: center;
+                    margin: 4rem 0 0 0;
+                        li {
+                            a {
+                                img {
+                                    width: 3rem;
+                                    height: 3rem;
+                                }
+                                span {
+                                    font-size: 1.8rem;
+                                }
+                            }
+                        }
+                }
+            }
+    }
+
+    .header__logo {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .header__titulo {
+        margin-right: 1.5rem;
+            h1 {
+                font-size: 5.8rem;
+            }
+    }
+
+    .busqueda {
+        margin: 0 0 4rem 0;
+    }
+
+    .dropdown, .dropdown2 {
+        ul {
+            background-color: $color-quinario;
+                li {
+                    font-size: 1.5rem;
+                        a {
+                            color: $color-principal;
+                        }
+                }
+        }
+    }
+
+    .celulares {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacion {
+        padding: 0;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacion__celular{
+        .s-22 {
+            margin: 0.5rem 2rem 0 7rem;  
+        }
+        .iphone-12 {
+            margin: 0.5rem 0 0 0;
+        }
+        .note-8 {
+            margin: 3rem 0 2rem 0;
+        }
+        .moto-g200 {
+            margin: 0.2rem 0 0rem 0;
+        }
+    }
+
+    .presentacion__texto {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .primer_texto {
+        width: 80%;
+        margin: 0.5rem 0 1rem 0;
+        padding: 1rem;
+    }
+
+    .segundo_texto {
+        width: 80%;
+        margin: 2rem 0 3rem 0;
+        padding: 1rem;
+    }
+
+    .s-22, .iphone-se {
+        width: 30rem;
+        height: 45rem;
+    }
+    
+    .note-11 {
+        width: 35rem;
+        height: 40rem;
+    }
+
+    .moto-e40, .a-21s, .note-8 {
+        width: 35rem;
+        height: 42rem;
+    }
+
+    .iphone-13, .iphone-12 {
+        width: 35rem;
+        height: 45rem;
+    }
+
+    .note-9 {
+        width: 38rem;
+        height: 42rem;
+    }
+
+    .a-51 {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    .nosotros__section {
+        width: 90%;
+    }
+
+    .texto {
+        margin: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .contactanos {
+        flex-flow: column wrap;
+        padding: 5rem;
+    }
+
+    .contactanos__section {
+        margin: 0 0 5rem 0;
+    }
+
+    .main__section {
+        width: 80%;
+        height: 45rem;
+    }
+
+    .olvidaste-contraseña {
+        padding: 0 0 1rem 0;
+    }
+
+    .main__form {
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    .main__registro {
+        padding: 10rem;
+    }
+
+    .main__olvidaste {
+        padding: 16rem;
+    }
+
+    footer {
+        flex-flow: column wrap;
+            p {
+                margin: 2rem 0;
+            }
+    }
+
+    .separador {
+        display: none;
+        font-size: 1.5rem;
+    }
+
+    .footer__iconos {
+        justify-content: center;
+        margin: 0 0 2rem 0;
+            li {
+                a {
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+    }
+}
+
+.titulo__tictactoe {
+    margin-right: 2rem;
+}
+
+.div__tictactoe, .div__tictactoe-2 {
+    width: 100%;
+    margin: 0;
+}
+
+.grilla-1 {
+    grid-template-columns: repeat(3,17rem);
+    grid-template-rows: repeat(3,17rem);
+    margin-bottom: 7rem;
+}
+
+.capa-o, .capa-x, .capa-cero {
+    width: 17rem;
+    height: 17rem;
+}
+
+.main__tictactoe {
+    margin: auto;
+}
+
+@media only screen and (max-width: 480px){
+    .header__titulo {
+        margin-right: 0.2rem;
+            h1 {
+                font-size: 4.2rem;
+            }
+    }
+
+    header {
+        nav {
+            align-items: center;
+            margin: 0 0 2.5rem 0;
+                ul {
+                    margin: 2.5rem 0;
+                    width: 60%;
+                    justify-content: space-evenly;
+                    row-gap: 1.5rem;
+                        a {
+                            margin: 0;
+                                img {
+                                    margin: 0 0 0 2rem;
+                                    width: 3rem;
+                                    height: 3rem;
+                                }
+                                span {
+                                    font-size: 1.5rem;
+                                }
+                        }
+                }
+        }
+    }
+
+    .busqueda, .header__barra, .footer__iconos li a{
+        margin: 0;
+    }
+
+    .header__barra {
+        width: 62%;
+    }
+
+    .marcas {
+        flex-flow: column wrap;
+    }
+
+    .dropdown {
+        flex-flow: column wrap;
+        width: 100%;
+            ul {
+                background-color: $color-principal;
+                    li {
+                        a {
+                            color: $color-secundario;
+                        }
+                    }
+            }
+    }
+
+    .dropdown2 {
+        ul {
+            background-color: $color-principal;
+                li {
+                    a {
+                        color: $color-secundario;
+                    }
+                }
+        }
+    }
+
+    .header_especial {
+        flex-flow: column wrap;
+            h1 {
+                margin-right: 0;
+            }
+            img {
+                width: 10rem;
+                height: 10rem;
+            }
+    }
+
+    .titulo__especial {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+
+    .main__section {
+        width: 100%;
+        height: 40rem;
+    }
+
+    .main__div {
+        width: 100%;
+    }
+
+    .s-22, .iphone-se {
+        width: 25rem;
+        height: 40rem;
+    }
+
+    .iphone-13, .iphone-12, .note-8, .moto-g200, .moto-g60s {
+        width: 30rem;
+        height: 40rem;
+    }
+
+    .a-21s, .note-11, .note-9 {
+        width: 35rem;
+        height: 40rem;
+    }
+
+    .moto-e40 {
+        width: 33rem;
+        height: 40rem;
+    }
+
+    .a-51 {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .primer_texto {
+        overflow-y: auto;
+        height: 60rem;
+    }
+
+    .segundo_texto {
+        overflow-y: auto;
+        height: 60rem;
+        padding: 0;
+        justify-content: unset;
+    }
+
+    .olvidaste-contraseña {
+        padding: 0;
+    }
+
+    .main__olvidaste {
+        padding: 8rem 0;
+    }
+
+    .section__olvidaste {
+        width: 70%;
+    }
+
+    .div__olvidaste {
+        input {
+            margin: 1rem 0.5rem;
+        }
+    }
+
+    .main__registro {
+        padding: 5rem;
+    }
+
+    .registro__div {
+        input {
+            width: 90%;
+        }
+    }
+
+    .nosotros__texto {
+        overflow-y: auto;
+        height: 42rem;
+    }
+
+    .texto {
+        margin: 0 2rem;
+    }
+
+    .contactanos {
+        padding: 4rem 0;
+    }
+
+    .contactanos__section {
+        width: 80%;
+        height: 80%;
+    }
+
+    .media__div {
+        input {
+            width: 94%;
+        }
+    }
+
+    .ubicacion {
+        width: 70%;
+        height: 70%;
+            iframe {
+                width: 90%;
+                height: 30rem;
+                padding-bottom: 2rem;
+            }
+    }
+
+    footer {
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .footer__iconos {
+        justify-content: space-evenly;
+        padding-left: .5rem;
+            li {
+                a {
+                    img {
+                        margin: 1rem 0 0 1rem;
+                    }
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            li:nth-child(4) {
+                margin: 1rem 0 0 1rem;
+            }
+    }
+}
+
+.header__tictactoe {
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.titulo__tictactoe {
+    margin: 0;
+}
+
+.grilla-1 {
+    grid-template-columns: repeat(3,10rem);
+    grid-template-rows: repeat(3,10rem);
+}
+
+.capa-cero, .capa-o, .capa-x {
+    width: 10rem;
+    height: 10rem;
+}
+
+.div__tictactoe-2 {
+    position: relative;
+    justify-content: end;
+    width: fit-content;
+    height: fit-content;
+    margin: 4rem 0 0 4rem;
+        a {
+            margin: 0;
+        }
+}
+
+.div__tictactoe {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    justify-content: start;
+    margin: 4rem 4rem 0 0;
+        a {
+            margin: 0;
+        }
+}
+
+@media only screen and (max-width: 450px){
+    .main__div {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .presentacion__celular{
+        .a-51 {
+            margin: 3rem 0;
+        }
+    }
+
+    .section__olvidaste{
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .div__olvidaste input, .buscar  input {
+        width: 12rem;
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .header__titulo {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    header {
+        nav {
+            ul {
+                li {
+                    a {
+                        span {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .primer_texto, .segundo_texto {
+        height: 50rem;
+    }
+
+
+    .a-51 {
+        width: 32rem;
+        height: 32rem;
+    }
+
+    .a-21s, .note-8 {
+        width: 27rem;
+        height: 32rem;
+    }
+
+    .presentacion__celular {
+        .moto-g200, .moto-e40 {
+            margin: 3rem 0;
+        }
+        .note-11, .note-9 {
+            margin: 3rem 0;
+            width: 30rem;
+            height: 35rem;
+        }
+    }
+
+    .s-22, .moto-g200, .moto-g60s {
+        height: 38rem;
+    }
+
+    .remarque {
+        font-size: 1.6rem;
+    }
+
+    .ubicacion {
+        width: 80%;
+    }
+
+    .div__olvidaste {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .footer__iconos {
+        li {
+            a {
+                img {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .grilla-1 {
+        grid-template-columns: repeat(3, 8rem);
+        grid-template-rows: repeat(3, 8rem);
+    }
+
+    .capa-cero, .capa-o, .capa-x {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .div__tictactoe, .div__tictactoe-2 {
+        margin: 3rem 0 0 0;
+    }
+}

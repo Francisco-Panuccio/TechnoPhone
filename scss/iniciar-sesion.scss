@@ -1,0 +1,79 @@
+/* Main Inicio de Sesion */
+
+.main__especial {
+    background-image: url(../imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex-2 (flex, wrap, space-around);
+    align-items: center;
+    padding: 6.4rem;
+    color: $color-secundario;
+}
+
+.main__section {
+    @include flex (flex, column wrap, space-evenly);
+    border: 0.5rem solid $color-secundario;
+    background-color: $color-principal;
+    border-radius: 20px;
+    width: 55rem;
+    height: 55rem;
+        h3 {
+            text-align: center;
+            font-family: 'Oxanium', sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+            border: 0.2rem solid $color-secundario;
+            border-radius: 10px;
+            padding: 0.5rem;
+        }
+}
+
+.main__div {
+    @include flex-1;
+    align-items: center;
+}
+
+.main__form {
+    @include flex (flex, column wrap, center);
+    padding: 1rem;
+            input {
+                margin: 1rem;
+                padding: 1rem;
+                font-family: 'Oxanium', sans-serif;
+                font-weight: bold;
+                font-size: 1.5rem;
+                border-radius: 10px;
+                font-weight: bold;
+                    &:hover {
+                        border: 0.2rem solid $color-secundario;
+                        box-shadow: 2px 2px 9px $color-secundario;
+                    }
+            }
+}
+
+.enviar__especial {
+    @include flex-1;
+        input {
+            background-color: green;
+            font-family: 'Oxanium', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $color-secundario;
+            border-radius: 10px;
+            width: 100%;
+                &:hover {
+                    border: 0.2rem solid $color-secundario;
+                    box-shadow: 2px 2px 9px $color-secundario;
+                }
+        }
+}
+
+.olvidaste-contraseña {
+    @include flex-1;
+    padding-bottom: 2rem;
+        p {
+            color: green;
+            font-size: 1.2rem;
+            font-family: 'Oxanium', sans-serif;
+        }
+}

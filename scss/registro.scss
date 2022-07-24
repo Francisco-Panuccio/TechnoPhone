@@ -1,0 +1,73 @@
+/* Main Registro */
+
+.main__registro {
+    background-image: url(../imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex-2 (flex, wrap, space-around);
+    align-items: center;
+    padding: 14.5rem;
+    color: $color-secundario;
+}
+
+.registro {
+    @include flex-1;
+        input {
+            width: 70%;
+            background-color: green;
+            font-family: 'Oxanium', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $color-secundario;
+            border-radius: 10px;
+                &:hover {
+                    border: 0.2rem solid $color-secundario;
+                    box-shadow: 2px 2px 9px $color-secundario;
+                }
+        }
+}
+
+.registro__section {
+    width: 70rem;
+    display: flex;
+    flex-flow: column wrap;
+    border: 0.5rem solid $color-secundario;
+    background-color: $color-principal;
+    border-radius: 20px;
+        h3 {
+            text-align: center;
+            font-family: 'Oxanium', sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+            border-bottom: 0.5rem solid $color-secundario;
+            padding: 1rem;
+        }
+        input {
+            margin: 1rem;
+            padding: 1rem;
+            font-family: 'Oxanium', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+}
+
+.registro__form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    padding: 1rem;
+        input {
+            &:hover {
+                border: 0.2rem solid $color-secundario;
+                box-shadow: 2px 2px 9px $color-secundario;
+            }
+        }
+}
+
+.registro__div {
+    @include flex-2 (flex, wrap, space-between);
+        input {
+            width: 40%;
+        }
+}

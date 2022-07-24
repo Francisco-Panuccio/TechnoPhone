@@ -1,0 +1,24 @@
+$estilos: (
+    margen: 10rem,
+    alineacion: center,
+    tamaño-letra: 3rem,
+    grosor-letra: 500
+);
+
+@mixin flex ($flex, $c-wrap, $j-content) {
+    display: $flex;
+    flex-flow: $c-wrap;
+    justify-content: $j-content;
+}
+
+@mixin flex-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin flex-2 ($flex, $wrap, $j-content) {
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $j-content;
+}

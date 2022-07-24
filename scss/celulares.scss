@@ -1,0 +1,61 @@
+/* Main Samsung/Apple/Xiaomi/Motorola */
+
+.presentacion {
+    background-image: url(../imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 4.38rem;
+}
+
+.presentacion__celular {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+        img {
+            margin: 3rem;
+        }
+}
+
+.presentacion__texto {
+    display: flex;
+        p {
+            font-family: 'Lintel', sans-serif;
+            font-size: 2.5rem;
+            color: $color-secundario;
+        }
+}
+
+.primer_texto {
+    @include flex-2 (flex, wrap, flex-start);
+    align-items: center;
+    width: 50%;
+    margin: 0 3rem 0 2rem;
+    padding: 0 1rem 0 1rem;
+    border-radius: 20px;
+    border: 20px ridge rgba(64,64,64,0.75);
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(196, 196, 196));
+}
+
+.segundo_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    margin: 0 2rem 0 3rem;
+    padding: 0 1rem 0 2rem;
+    border-radius: 20px;
+    border: 20px ridge rgba(64,64,64,0.75);
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(196, 196, 196));
+}
+
+.remarque {
+    color: $color-secundario;
+    font-family: 'Neogrey', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;   
+    align-self: center;   
+    text-align: center;
+    padding: .4rem;    
+}

@@ -176,6 +176,29 @@ header {
         }
 }
 
+/* Header de Inicio de Sesion/Registro/Olvidaste Contraseña */
+
+.header__especial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1rem dotted #FFFFFF;
+        h1 {
+            margin-right: 2rem;
+        }
+        h2 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+}
+
+.titulo__especial {
+    color: #FFFFFF;
+    font-family: 'Architext', sans-serif;
+    font-size: 3rem;
+}
+
 /* Main Index */
 
 .carousel {
@@ -252,208 +275,4 @@ footer {
                     }
             }
         }
-}
-
-/* Media Queries Index */
-
-@media only screen and (max-width: 768px){
-    header {
-        justify-content: center;
-        column-gap: 2rem;
-            nav {
-                ul {
-                    justify-content: center;
-                    margin: 4rem 0 0 0;
-                        li {
-                            a {
-                                img {
-                                    width: 3rem;
-                                    height: 3rem;
-                                }
-                                span {
-                                    font-size: 1.8rem;
-                                }
-                            }
-                        }
-                }
-            }
-    }
-
-    .header__logo {
-        width: 16rem;
-        height: 16rem;
-    }
-
-    .header__titulo {
-        margin-right: 1.5rem;
-            h1 {
-                font-size: 5.8rem;
-            }
-    }
-
-    .busqueda {
-        margin: 0 0 4rem 0;
-    }
-
-    .dropdown, .dropdown2 {
-        ul {
-            background-color: $color-quinario;
-                li {
-                    font-size: 1.5rem;
-                        a {
-                            color: $color-principal;
-                        }
-                }
-        }
-    }
-
-    footer {
-        flex-flow: column wrap;
-            p {
-                margin: 2rem 0;
-            }
-    }
-
-    .separador {
-        display: none;
-        font-size: 1.5rem;
-    }
-
-    .footer__iconos {
-        justify-content: center;
-        margin: 0 0 2rem 0;
-            li {
-                a {
-                    span {
-                        font-size: 1rem;
-                    }
-                }
-            }
-    }
-}
-
-@media only screen and (max-width: 480px){
-    .header__titulo {
-        margin-right: 0.2rem;
-            h1 {
-                font-size: 4.2rem;
-            }
-    }
-
-    header {
-        nav {
-            align-items: center;
-            margin: 0 0 2.5rem 0;
-                ul {
-                    margin: 2.5rem 0;
-                    width: 60%;
-                    justify-content: space-evenly;
-                    row-gap: 1.5rem;
-                        a {
-                            margin: 0;
-                                img {
-                                    margin: 0 0 0 2rem;
-                                    width: 3rem;
-                                    height: 3rem;
-                                }
-                                span {
-                                    font-size: 1.5rem;
-                                }
-                        }
-                }
-        }
-    }
-
-    .busqueda, .footer__iconos li a{
-        margin: 0;
-    }
-
-    .header__barra {
-        margin: 0;
-        width: 62%;
-    }
-
-    .marcas {
-        flex-flow: column wrap;
-    }
-
-    .dropdown {
-        flex-flow: column wrap;
-        width: 100%;
-            ul {
-                background-color: $color-principal;
-                    li {
-                        a {
-                            color: $color-secundario;
-                        }
-                    }
-            }
-    }
-
-    .dropdown2 {
-        ul {
-            background-color: $color-principal;
-                li {
-                    a {
-                        color: $color-secundario;
-                    }
-                }
-        }
-    }
-
-    footer {
-        p {
-            font-size: 1.2rem;
-        }
-    }
-
-    .footer__iconos {
-        justify-content: space-evenly;
-        padding-left: .5rem;
-            li {
-                a {
-                    img {
-                        margin: 1rem 0 0 1rem;
-                    }
-                    span {
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-            li:nth-child(4) {
-                margin: 1rem 0 0 1rem;
-            }
-    }
-}
-
-@media only screen and (max-width: 375px){
-    .header__titulo {
-        h1 {
-            font-size: 3.5rem;
-        }
-    }
-
-    header {
-        nav {
-            ul {
-                li {
-                    a {
-                        span {
-                            font-size: 1.3rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .footer__iconos {
-        li {
-            a {
-                img {
-                    margin: 0;
-                }
-            }
-        }
-    }
 }
