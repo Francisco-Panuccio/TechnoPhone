@@ -1,8 +1,44 @@
 /* Media Queries */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1589px) {
     header {
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1442px) {
+    .busqueda {
+        margin: 0 0 4rem 4.5rem;
+        width: 80%;
+    }
+
+    footer {
+        flex-flow: column wrap;
+            p {
+                margin: 2rem 0;
+            }
+    }
+
+    .separador {
+        display: none;
+        font-size: 1.5rem;
+    }
+
+    .footer__iconos {
+        justify-content: center;
+        margin: 0 0 2rem 0;
+            li {
+                a {
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+    }
+}
+
+@media only screen and (max-width: 831px){
+    header {
         column-gap: 2rem;
             nav {
                 ul {
@@ -39,6 +75,15 @@
         margin: 0 0 4rem 0;
     }
 
+    .titulo__especial {
+        h1, h2 {
+            font-size: 1.8em;
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
     .dropdown, .dropdown2 {
         ul {
             background-color: $color-quinario;
@@ -48,6 +93,12 @@
                             color: $color-principal;
                         }
                 }
+        }
+    }
+
+    .titulo__especial {
+        h1,h2 {
+            font-size: 1.5em;
         }
     }
 
@@ -166,30 +217,6 @@
         padding: 16rem;
     }
 
-    footer {
-        flex-flow: column wrap;
-            p {
-                margin: 2rem 0;
-            }
-    }
-
-    .separador {
-        display: none;
-        font-size: 1.5rem;
-    }
-
-    .footer__iconos {
-        justify-content: center;
-        margin: 0 0 2rem 0;
-            li {
-                a {
-                    span {
-                        font-size: 1rem;
-                    }
-                }
-            }
-    }
-
     .titulo__tictactoe {
         margin-right: 2rem;
     }
@@ -215,44 +242,23 @@
     }
 }
 
-@media only screen and (max-width: 480px){
-    .header__titulo {
-        margin-right: 0.2rem;
-            h1 {
-                font-size: 4.2rem;
-            }
-    }
-
+@media only screen and (max-width: 713px){
     header {
         nav {
             align-items: center;
-            margin: 0 0 2.5rem 0;
                 ul {
-                    margin: 2.5rem 0;
                     width: 60%;
-                    justify-content: space-evenly;
                     row-gap: 1.5rem;
-                        a {
-                            margin: 0;
-                                img {
-                                    margin: 0 0 0 2rem;
-                                    width: 3rem;
-                                    height: 3rem;
-                                }
-                                span {
-                                    font-size: 1.5rem;
-                                }
-                        }
                 }
         }
     }
 
-    .busqueda, .header__barra, .footer__iconos li a{
-        margin: 0;
+    .header__barra {
+        width: 100%;
     }
 
-    .header__barra {
-        width: 62%;
+    .header_especial {
+        flex-direction: column;
     }
 
     .marcas {
@@ -281,6 +287,46 @@
                     }
                 }
         }
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .header__titulo {
+        margin-right: 0.2rem;
+            h1 {
+                font-size: 4.2rem;
+            }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    header {
+        nav {
+            margin: 0 0 2.5rem 0;
+                ul {
+                    margin: 2.5rem 0;
+                    justify-content: space-evenly;
+                        a {
+                            margin: 0;
+                                img {
+                                    margin: 0 0 0 2rem;
+                                    width: 3rem;
+                                    height: 3rem;
+                                }
+                                span {
+                                    font-size: 1.5rem;
+                                }
+                        }
+                }
+        }
+    }
+
+    .busqueda, .header__barra, .footer__iconos li a{
+        margin: 0;
+    }
+
+    .header__barra {
+        width: 62%;
     }
 
     .header_especial {
