@@ -4,6 +4,14 @@
     header {
         justify-content: center;
     }
+
+    .primer_texto {
+        margin: 0 1rem 0 0;
+    }
+
+    .segundo_texto {
+        margin: 0 0 0 1rem;
+    }
 }
 
 @media only screen and (max-width: 1442px) {
@@ -34,6 +42,46 @@
                     }
                 }
             }
+    }
+
+    .texto {
+        margin: 8rem;
+    }
+
+    .presentacion {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .contactanos {
+        flex-direction: column;
+        padding: 5rem;
+    }
+
+    .contactanos__section {
+        margin: 0 0 5rem 0;
+    }
+
+    .nosotros__section {
+        width: 70%;
+    }
+
+    .texto {
+        margin: 6rem;
+        font-size: 2.8rem;
+    }
+
+    .primer_texto {
+        p {
+            font-size: 2.2rem;
+        }
+    }
+
+    .remarque {
+        font-size: 1.8rem;
     }
 }
 
@@ -71,6 +119,10 @@
             }
     }
 
+    .main__olvidaste {
+        padding: 18rem;
+    }
+
     .busqueda {
         margin: 0 0 4rem 0;
     }
@@ -80,6 +132,33 @@
             font-size: 1.8em;
             margin-right: 0;
         }
+    }
+
+    .nosotros__section {
+        width: 75%;
+    }
+
+    .texto {
+        margin: 4rem;
+        font-size: 2.6rem;
+    }
+
+    .presentacion__texto {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .primer_texto {
+        width: 80%;
+        margin: 0.5rem 0 1rem 0;
+        padding: 1rem;
+    }
+
+    .segundo_texto {
+        width: 80%;
+        margin: 2rem 0 3rem 0;
+        padding: 1rem;
     }
 }
 
@@ -110,9 +189,6 @@
 
     .presentacion {
         padding: 0;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
     }
 
     .presentacion__celular{
@@ -128,24 +204,6 @@
         .moto-g200 {
             margin: 0.2rem 0 0rem 0;
         }
-    }
-
-    .presentacion__texto {
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .primer_texto {
-        width: 80%;
-        margin: 0.5rem 0 1rem 0;
-        padding: 1rem;
-    }
-
-    .segundo_texto {
-        width: 80%;
-        margin: 2rem 0 3rem 0;
-        padding: 1rem;
     }
 
     .s-22, .iphone-se {
@@ -188,12 +246,7 @@
     }
 
     .contactanos {
-        flex-flow: column wrap;
         padding: 5rem;
-    }
-
-    .contactanos__section {
-        margin: 0 0 5rem 0;
     }
 
     .main__section {
@@ -257,8 +310,19 @@
         width: 100%;
     }
 
-    .header_especial {
+    .header__especial {
         flex-direction: column;
+        .titulo__especial {
+            h1,h2 {
+                font-size: 1.2em;
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    .div__olvidaste {
+        flex-direction: column;
+        align-items: center;
     }
 
     .marcas {
@@ -290,12 +354,51 @@
     }
 }
 
+@media only screen and (max-width: 669px){
+    .registro__div {
+        input {
+            width: 100%;
+        }
+    }
+}
+
 @media only screen and (max-width: 575px){
     .header__titulo {
         margin-right: 0.2rem;
             h1 {
                 font-size: 4.2rem;
             }
+    }
+
+    .media__div {
+        input {
+            width: 95%;
+        }
+    }
+
+    .s-22, .iphone-se {
+        width: 25rem;
+        height: 40rem;
+    }
+
+    .iphone-13, .iphone-12, .note-8, .moto-g200, .moto-g60s {
+        width: 30rem;
+        height: 40rem;
+    }
+
+    .a-21s, .note-11, .note-9 {
+        width: 35rem;
+        height: 40rem;
+    }
+
+    .moto-e40 {
+        width: 33rem;
+        height: 40rem;
+    }
+
+    .a-51 {
+        width: 40rem;
+        height: 40rem;
     }
 }
 
@@ -329,8 +432,7 @@
         width: 62%;
     }
 
-    .header_especial {
-        flex-flow: column wrap;
+    .header__especial {
             h1 {
                 margin-right: 0;
             }
@@ -341,8 +443,15 @@
     }
 
     .titulo__especial {
-        font-size: 1.8rem;
-        margin: 1rem 0;
+        h1,h2 {
+            font-size: 1.2em;
+        }
+    }
+
+    .carousel {
+        img {
+            height: 50rem;
+        }
     }
 
     .main__section {
@@ -352,31 +461,6 @@
 
     .main__div {
         width: 100%;
-    }
-
-    .s-22, .iphone-se {
-        width: 25rem;
-        height: 40rem;
-    }
-
-    .iphone-13, .iphone-12, .note-8, .moto-g200, .moto-g60s {
-        width: 30rem;
-        height: 40rem;
-    }
-
-    .a-21s, .note-11, .note-9 {
-        width: 35rem;
-        height: 40rem;
-    }
-
-    .moto-e40 {
-        width: 33rem;
-        height: 40rem;
-    }
-
-    .a-51 {
-        width: 40rem;
-        height: 40rem;
     }
 
     .primer_texto {
@@ -520,6 +604,12 @@
 }
 
 @media only screen and (max-width: 450px){
+    .carousel {
+        img {
+            height: 45rem;
+        }
+    }
+
     .main__div {
         width: 50%;
         margin: 0 auto;
@@ -543,7 +633,7 @@
     }
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 395px){
     .header__titulo {
         h1 {
             font-size: 3.5rem;
@@ -561,6 +651,12 @@
                     }
                 }
             }
+        }
+    }
+
+    .carousel {
+        img {
+            height: 40rem;
         }
     }
 
