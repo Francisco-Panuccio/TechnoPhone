@@ -270,12 +270,7 @@
         padding: 16rem;
     }
 
-    .titulo__tictactoe {
-        margin-right: 2rem;
-    }
-
     .div__tictactoe, .div__tictactoe-2 {
-        width: 100%;
         margin: 0;
     }
 
@@ -399,6 +394,32 @@
     .a-51 {
         width: 40rem;
         height: 40rem;
+    }
+
+    .titulo__tictactoe {
+        order: -1;
+        width: 100%;
+            h1 {
+                margin-bottom: 3rem;
+            }
+    }
+
+    .container-fluid {
+        padding-bottom: 2rem;
+    }
+
+    .div__tictactoe {
+        margin: 0 60.4% 0 0;
+    }
+
+    .grilla-1 {
+        grid-template-columns: repeat(3,13rem);
+        grid-template-rows: repeat(3,13rem);
+    }
+
+    .capa-o, .capa-x, .capa-cero {
+        width: 13rem;
+        height: 13rem;
     }
 }
 
@@ -561,13 +582,8 @@
             }
     }
 
-    .header__tictactoe {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-
-    .titulo__tictactoe {
-        margin: 0;
+    .div__tictactoe {
+        margin: 0 55% 0 0;
     }
 
     .grilla-1 {
@@ -578,28 +594,6 @@
     .capa-cero, .capa-o, .capa-x {
         width: 10rem;
         height: 10rem;
-    }
-
-    .div__tictactoe-2 {
-        position: relative;
-        justify-content: end;
-        width: fit-content;
-        height: fit-content;
-        margin: 4rem 0 0 4rem;
-            a {
-                margin: 0;
-            }
-    }
-
-    .div__tictactoe {
-        position: relative;
-        width: fit-content;
-        height: fit-content;
-        justify-content: start;
-        margin: 4rem 4rem 0 0;
-            a {
-                margin: 0;
-            }
     }
 }
 
@@ -630,6 +624,10 @@
     .div__olvidaste input, .buscar  input {
         width: 12rem;
         margin: 1rem;
+    }
+
+    .div__tictactoe {
+        margin: 0 52.5% 0 0;
     }
 }
 
@@ -713,6 +711,10 @@
         }
     }
 
+    .div__tictactoe {
+        margin: 0 47.9% 0 0;
+    }
+
     .grilla-1 {
         grid-template-columns: repeat(3, 8rem);
         grid-template-rows: repeat(3, 8rem);
@@ -721,9 +723,5 @@
     .capa-cero, .capa-o, .capa-x {
         width: 8rem;
         height: 8rem;
-    }
-
-    .div__tictactoe, .div__tictactoe-2 {
-        margin: 3rem 0 0 0;
     }
 }
